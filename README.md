@@ -1,16 +1,64 @@
-# React + Vite
+# 🎬 CineZone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современное React-приложение для поиска фильмов и создания личной коллекции избранного.
+Аналог Netflix/Кинопоиска с использованием **OMDb API**.
+НО БЕЗ ПРОСМОТРА ФИЛЬМОВ!
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Демонстрация
+**Посмотреть сайт вживую:** 👉 [https://cinezone-react.vercel.app/]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Функционал
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **🔍 Живой поиск фильмов:** Мгновенный поиск по базе данных OMDb API.
+- **📄 Детальная информация:** Модальное окно с сюжетом, рейтингом (IMDb), актерами и годом выпуска.
+- **❤️ Избранное (Local Storage):** Сохраняйте любимые фильмы. Список не исчезнет даже после перезагрузки страницы.
+- **📱 Адаптивный дизайн:** Полная поддержка мобильных устройств, планшетов и десктопов.
+- **🎨 Glassmorphism UI:** Современный дизайн с эффектом матового стекла, анимациями и плавными переходами.
+- **🧗‍♂️ Умный Хедер:** Шапка сайта трансформируется в компактную панель при скролле.
+
+---
+
+## 🛠 Технологии
+
+- **Frontend:** React.js (Vite)
+- **Стилизация:** Pure CSS (CSS Variables, Flexbox, Grid, Animations)
+- **API:** OMDb API
+- **Деплой:** Vercel
+
+---
+
+## ⚙️ Установка и запуск локально
+
+Если вы хотите запустить этот проект у себя на компьютере:
+
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone [https://github.com/AxM133/cinezone-react.git](https://github.com/AxM133/cinezone-react.git)
+
+2. **Перейдите в папку проекта:**
+
+    ```bash
+        cd cinezone-react
+
+3. **Установите зависимости:**
+
+    ```bash
+    npm install
+
+4. **Настройка API ключа:** Создайте файл .env в корне проекта и добавьте туда ваш ключ от OMDb:
+
+    ```Фрагмент кода
+    VITE_API_KEY=ваш_ключ_здесь
+
+5. **Запустите проект:**
+
+    ```bash
+    npm run dev
