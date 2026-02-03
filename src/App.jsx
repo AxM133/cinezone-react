@@ -34,7 +34,6 @@ function App() {
     }
   }
 
-
   const searchMovies = async (title) => {
 
     setIsLoading(true);
@@ -154,7 +153,10 @@ function App() {
                     key={movie.imdbID + index}
                     onClick={() => onMovieSelect(movie.imdbID)}
                   >
-                    <img src={movie.Poster} alt={movie.Title} />
+                    <img
+                      src={movie.Poster !== 'N/A' ? movie.Poster.replace('http://', 'https://') : 'https://via.placeholder.com/300x450?text=No+Poster'}
+                      alt={movie.Title}
+                    />
                     <h3>{movie.Title}</h3>
                     <p>{movie.Year}</p>
                   </div>

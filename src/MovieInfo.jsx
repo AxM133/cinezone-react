@@ -9,7 +9,10 @@ const MovieInfo = (props) => {
                 <button className="close-btn" onClick={onClose}>❌</button>
 
                 <div className="modal-header">
-                    <img src={movie.Poster} alt={movie.Title} />
+                    <img
+                        src={movie.Poster !== 'N/A' ? movie.Poster.replace('http://', 'https://') : 'https://via.placeholder.com/300x450?text=No+Poster'}
+                        alt={movie.Title}
+                    />
 
                     <div className="modal-info">
                         <h2>{movie.Title}</h2>
